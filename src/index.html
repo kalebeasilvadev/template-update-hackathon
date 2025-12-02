@@ -41,19 +41,17 @@
 
 	<body>
 		<app-root>
-			<div id="preloader">
-				<div id="status" class="la-ball-triangle-path">
-					<div></div>
-					<div></div>
-					<div></div>
+			<div id="preloader" aria-label="Carregando..." tabindex="-1">
+				<div id="status" class="la-ball-triangle-path" aria-label="Carregando..." tabindex="-1">
+					<div aria-label="Carregando..." tabindex="-1"></div>
+					<div aria-label="Carregando..." tabindex="-1"></div>
+					<div aria-label="Carregando..." tabindex="-1"></div>
 				</div>
 			</div>
 		</app-root>
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-		<script
-			nomodule
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" nomodule="true" aria-label="Carregando biblioteca..."></script>
+		<script nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" type="module" aria-label="Carregando biblioteca..."></script>
 	</body>
 </html>
