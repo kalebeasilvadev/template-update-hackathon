@@ -1,11 +1,11 @@
 # 🚨 Relatório de Validação de Build
 
-**Data:** 02/12/2025, 17:50:38
+**Data:** 02/12/2025, 18:43:11
 **Projeto:** /Users/kalebeandrade/Dev/geral/template-update-hackathon
 **Comando:** npm run build
 **Status:** ❌ FALHOU
 
-## 🔴 Erros Encontrados (50)
+## 🔴 Erros Encontrados (48)
 
 
 ### unknown:0:0
@@ -74,21 +74,17 @@
 
 ### unknown:0:0
 **Código:** GENERIC_ERROR
-**Mensagem:** Error: src/app/pricing/pricing-page/pricing-page.component.html:1:96 - error TS2551: Property 'pricing' does not exist on type 'PricingPageComponent'. Did you mean 'pricing$'?
-
-### unknown:0:0
-**Código:** GENERIC_ERROR
-**Mensagem:** Error: src/app/services/services-page/services-page.component.html:41:80 - error TS2339: Property 'header' does not exist on type 'ServicesPageComponent'.
+**Mensagem:** Error: src/app/services/services-page/services-page.component.html:41:89 - error TS2339: Property 'buttonlink' does not exist on type 'Service'.
 
 ### src/app/testimonial/feedback-block/feedback-block.component.html:2:2
 **Código:** NG5002
 **Mensagem:** Opening tag "img" not terminated.
 
-### src/app/testimonial/feedback-block/feedback-block.component.html:2:95
+### src/app/testimonial/feedback-block/feedback-block.component.html:2:108
 **Código:** NG5002
 **Mensagem:** Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
 
-### src/app/testimonial/feedback-block/feedback-block.component.html:2:96
+### src/app/testimonial/feedback-block/feedback-block.component.html:2:109
 **Código:** NG5002
 **Mensagem:** Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
 
@@ -174,21 +170,17 @@
 
 ### unknown:0:0
 **Código:** GENERIC_ERROR
-**Mensagem:** Error: src/app/pricing/pricing-page/pricing-page.component.html:1:96 - error TS2551: Property 'pricing' does not exist on type 'PricingPageComponent'. Did you mean 'pricing$'?
-
-### unknown:0:0
-**Código:** GENERIC_ERROR
-**Mensagem:** Error: src/app/services/services-page/services-page.component.html:41:80 - error TS2339: Property 'header' does not exist on type 'ServicesPageComponent'.
+**Mensagem:** Error: src/app/services/services-page/services-page.component.html:41:89 - error TS2339: Property 'buttonlink' does not exist on type 'Service'.
 
 ### src/app/testimonial/feedback-block/feedback-block.component.html:2:2
 **Código:** NG5002
 **Mensagem:** Opening tag "img" not terminated.
 
-### src/app/testimonial/feedback-block/feedback-block.component.html:2:95
+### src/app/testimonial/feedback-block/feedback-block.component.html:2:108
 **Código:** NG5002
 **Mensagem:** Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
 
-### src/app/testimonial/feedback-block/feedback-block.component.html:2:96
+### src/app/testimonial/feedback-block/feedback-block.component.html:2:109
 **Código:** NG5002
 **Mensagem:** Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
 
@@ -406,21 +398,10 @@ Error: src/app/notfound/notfound-page/notfound-page.component.html:4:90 - error 
     Error occurs in the template of component NotfoundPageComponent.
 
 
-Error: src/app/pricing/pricing-page/pricing-page.component.html:1:96 - error TS2551: Property 'pricing' does not exist on type 'PricingPageComponent'. Did you mean 'pricing$'?
+Error: src/app/services/services-page/services-page.component.html:41:89 - error TS2339: Property 'buttonlink' does not exist on type 'Service'.
 
-1 <section id="pricing" class="secondary-color text-center scrollto clearfix" [attr.aria-label]="pricing.title">
-                                                                                                 ~~~~~~~
-
-  src/app/pricing/pricing-page/pricing-page.component.ts:11:15
-    11  templateUrl: './pricing-page.component.html',
-                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component PricingPageComponent.
-
-
-Error: src/app/services/services-page/services-page.component.html:41:80 - error TS2339: Property 'header' does not exist on type 'ServicesPageComponent'.
-
-41             class="button video link-lightbox" [attr.aria-label]="'Ir para ' + header.buttonlink">
-                                                                                  ~~~~~~
+41             class="button video link-lightbox" [attr.aria-label]="'Ir para ' + services.buttonlink">
+                                                                                           ~~~~~~~~~~
 
   src/app/services/services-page/services-page.component.ts:10:15
     10  templateUrl: './services-page.component.html',
@@ -430,8 +411,8 @@ Error: src/app/services/services-page/services-page.component.html:41:80 - error
 
 Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:2 - error NG5002: Opening tag "img" not terminated.
 
-2  <img src="assets/images/user-images/{{ feedback.userimage }}"Imagem relacionada ao conteúdo' }}" tabindex="0" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2  <img src="assets/images/user-images/{{ feedback.userimage }}" tabindex="0"Imagem relacionada ao conteúdo' }}" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   src/app/testimonial/feedback-block/feedback-block.component.ts:6:15
     6  templateUrl: './feedback-block.component.html',
@@ -439,10 +420,10 @@ Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:2 - er
     Error occurs in the template of component FeedbackBlockComponent.
 
 
-Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:95 - error NG5002: Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
+Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:108 - error NG5002: Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
 
-2  <img src="assets/images/user-images/{{ feedback.userimage }}"Imagem relacionada ao conteúdo' }}" tabindex="0" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
-                                                                                                ~
+2  <img src="assets/images/user-images/{{ feedback.userimage }}" tabindex="0"Imagem relacionada ao conteúdo' }}" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
+                                                                                                             ~
 
   src/app/testimonial/feedback-block/feedback-block.component.ts:6:15
     6  templateUrl: './feedback-block.component.html',
@@ -450,10 +431,10 @@ Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:95 - e
     Error occurs in the template of component FeedbackBlockComponent.
 
 
-Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:96 - error NG5002: Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
+Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:109 - error NG5002: Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
 
-2  <img src="assets/images/user-images/{{ feedback.userimage }}"Imagem relacionada ao conteúdo' }}" tabindex="0" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
-                                                                                                 ~
+2  <img src="assets/images/user-images/{{ feedback.userimage }}" tabindex="0"Imagem relacionada ao conteúdo' }}" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
+                                                                                                              ~
 
   src/app/testimonial/feedback-block/feedback-block.component.ts:6:15
     6  templateUrl: './feedback-block.component.html',
@@ -689,21 +670,10 @@ Error: src/app/notfound/notfound-page/notfound-page.component.html:4:90 - error 
     Error occurs in the template of component NotfoundPageComponent.
 
 
-Error: src/app/pricing/pricing-page/pricing-page.component.html:1:96 - error TS2551: Property 'pricing' does not exist on type 'PricingPageComponent'. Did you mean 'pricing$'?
+Error: src/app/services/services-page/services-page.component.html:41:89 - error TS2339: Property 'buttonlink' does not exist on type 'Service'.
 
-1 <section id="pricing" class="secondary-color text-center scrollto clearfix" [attr.aria-label]="pricing.title">
-                                                                                                 ~~~~~~~
-
-  src/app/pricing/pricing-page/pricing-page.component.ts:11:15
-    11  templateUrl: './pricing-page.component.html',
-                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Error occurs in the template of component PricingPageComponent.
-
-
-Error: src/app/services/services-page/services-page.component.html:41:80 - error TS2339: Property 'header' does not exist on type 'ServicesPageComponent'.
-
-41             class="button video link-lightbox" [attr.aria-label]="'Ir para ' + header.buttonlink">
-                                                                                  ~~~~~~
+41             class="button video link-lightbox" [attr.aria-label]="'Ir para ' + services.buttonlink">
+                                                                                           ~~~~~~~~~~
 
   src/app/services/services-page/services-page.component.ts:10:15
     10  templateUrl: './services-page.component.html',
@@ -713,8 +683,8 @@ Error: src/app/services/services-page/services-page.component.html:41:80 - error
 
 Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:2 - error NG5002: Opening tag "img" not terminated.
 
-2  <img src="assets/images/user-images/{{ feedback.userimage }}"Imagem relacionada ao conteúdo' }}" tabindex="0" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2  <img src="assets/images/user-images/{{ feedback.userimage }}" tabindex="0"Imagem relacionada ao conteúdo' }}" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   src/app/testimonial/feedback-block/feedback-block.component.ts:6:15
     6  templateUrl: './feedback-block.component.html',
@@ -722,10 +692,10 @@ Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:2 - er
     Error occurs in the template of component FeedbackBlockComponent.
 
 
-Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:95 - error NG5002: Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
+Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:108 - error NG5002: Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
 
-2  <img src="assets/images/user-images/{{ feedback.userimage }}"Imagem relacionada ao conteúdo' }}" tabindex="0" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
-                                                                                                ~
+2  <img src="assets/images/user-images/{{ feedback.userimage }}" tabindex="0"Imagem relacionada ao conteúdo' }}" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
+                                                                                                             ~
 
   src/app/testimonial/feedback-block/feedback-block.component.ts:6:15
     6  templateUrl: './feedback-block.component.html',
@@ -733,10 +703,10 @@ Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:95 - e
     Error occurs in the template of component FeedbackBlockComponent.
 
 
-Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:96 - error NG5002: Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
+Error: src/app/testimonial/feedback-block/feedback-block.component.html:2:109 - error NG5002: Unexpected closing block. The block may have been closed earlier. If you meant to write the } character, you should use the "&#125;" HTML entity instead.
 
-2  <img src="assets/images/user-images/{{ feedback.userimage }}"Imagem relacionada ao conteúdo' }}" tabindex="0" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
-                                                                                                 ~
+2  <img src="assets/images/user-images/{{ feedback.userimage }}" tabindex="0"Imagem relacionada ao conteúdo' }}" alt="{{ feedback.alt || getImageAlt(feedback.userimage) || 'Imagem relacionada ao conteúdo' }}" />
+                                                                                                              ~
 
   src/app/testimonial/feedback-block/feedback-block.component.ts:6:15
     6  templateUrl: './feedback-block.component.html',
