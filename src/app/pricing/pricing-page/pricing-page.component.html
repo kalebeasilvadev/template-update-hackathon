@@ -1,16 +1,16 @@
-<section id="pricing" class="secondary-color text-center scrollto clearfix" [attr.aria-label]="pricing.title">
-  <div class="row clearfix" tabindex="-1" role="list">
-    @if (pricing$ | async; as pricing) {
+@if (pricing$ | async; as pricing) {
+  <section id="pricing" class="secondary-color text-center scrollto clearfix" [attr.aria-label]="pricing.title">
+    <div class="row clearfix" tabindex="-1" role="list">
       <div class="section-heading" tabindex="-1" role="list">
         <h1 class="pull-down" [attr.aria-label]="pricing.tagline">{{ pricing.tagline }}</h1>
         <h2 class="section-title" [attr.aria-label]="pricing.title">{{ pricing.title }}</h2>
       </div>
-    }
 
-    @for (plan of plans$ | async; track plan; let i = $index) {
-      <div tabindex="-1" role="list">
-        <app-pricing-block [plan]="plan"></app-pricing-block>
-      </div>
-    }
-  </div>
-</section>
+      @for (plan of plans$ | async; track plan; let i = $index) {
+        <div tabindex="-1" role="list">
+          <app-pricing-block [plan]="plan"></app-pricing-block>
+        </div>
+      }
+    </div>
+  </section>
+}
