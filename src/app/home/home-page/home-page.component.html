@@ -1,21 +1,20 @@
 @if (header$ | async; as header) {
-	<div>
-		<header
-			id="banner"
+	<div tabindex="-1" role="main" aria-label="Conteúdo principal">
+		<header id="banner"
 			class="scrollto clearfix shift-left"
 			data-enllax-ratio=".5"
 			[style.background]="
 				'url(../assets/images/banner-images/' +
 				header.image +
 				' ) no-repeat center top;'
-			">
-			<div id="banner-content" class="row clearfix pull-right">
-				<div class="col-38">
-					<div class="section-heading">
+			" tabindex="0" role="banner" [attr.aria-label]="header.title">
+			<div id="banner-content" class="row clearfix pull-right" tabindex="-1" role="main" aria-label="Conteúdo principal">
+				<div class="col-38" tabindex="-1" role="main" aria-label="Conteúdo principal">
+					<div class="section-heading" tabindex="-1" role="main" aria-label="Conteúdo principal">
 						<h1>{{ header.tagline }}</h1>
 						<h2>{{ header.title }}</h2>
 					</div>
-					<a routerLink="{{ header.buttonlink }}" class="button">{{
+					<a routerLink="{{ header.buttonlink }}" class="button" [attr.aria-label]="'Ir para ' + header.buttonlink" tabindex="0">{{
 						header.buttontext
 					}}</a>
 				</div>
