@@ -1,17 +1,17 @@
 @if (intro$ | async; as intro) {
-	<section id="about" class="introduction scrollto pull-right">
-		<div class="row clearfix">
-			<div class="col-3">
-				<div class="section-heading">
-					<h3>{{ intro.tagline }}</h3>
+	<section id="about" class="introduction scrollto pull-right" [attr.aria-label]="intro.tagline">
+		<div class="row clearfix" tabindex="-1" [attr.aria-label]="'Texto ' + intro.tagline" role="list">
+			<div class="col-3" tabindex="-1" [attr.aria-label]="'Texto ' + intro.tagline" role="list">
+				<div class="section-heading" tabindex="-1" [attr.aria-label]="'Texto ' + intro.tagline" role="list">
+					<h1>{{ intro.tagline }}</h1>
 					<h2 class="section-title">{{ intro.title }}</h2>
 					<p class="section-subtitle">{{ intro.description }}</p>
 				</div>
 			</div>
 			@if (features$) {
-				<div class="col-2-3">
+				<div class="col-2-3" tabindex="-1" [attr.aria-label]="'Texto ' + intro.tagline" role="list">
 					@for (feature of features$ | async; track feature; let i = $index) {
-						<div>
+						<div tabindex="-1" [attr.aria-label]="'Texto ' + intro.tagline" role="list">
 							<app-feature-block [feature]="feature"></app-feature-block>
 						</div>
 					}

@@ -12,48 +12,41 @@
 		<base href="/" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" aria-label="Abrir menu" />
 		<!-- Main CSS Files -->
-		<!-- <link rel="stylesheet" href="/assets/css/style.css" type="text/css" /> -->
+		<!-- <link rel="stylesheet" href="/assets/css/style.css" type="text/css" aria-label="Abrir menu" /> -->
 
 		<!-- Namari Color CSS -->
-		<link
-			rel="stylesheet"
+		<link rel="stylesheet"
 			href="/assets/css/namari-color.css"
-			type="text/css" />
+			type="text/css" aria-label="Abrir menu" />
 
 		<!--Icon Fonts - Font Awesome Icons-->
-		<link
-			rel="stylesheet"
+		<link rel="stylesheet"
 			href="/assets/css/font-awesome.min.css"
-			type="text/css" />
-		<!-- <link
-      rel="stylesheet"
+			type="text/css" aria-label="Abrir menu" />
+		<!-- <link rel="stylesheet"
       href="/assets/css/ionicons.min.css"
-      type="text/css"
-    /> -->
+      type="text/css" aria-label="Abrir menu" /> -->
 		<!--Google Webfonts-->
-		<link
-			href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
 			rel="stylesheet"
-			type="text/css" />
+			type="text/css" aria-label="Abrir menu" />
 	</head>
 
 	<body>
 		<app-root>
-			<div id="preloader">
-				<div id="status" class="la-ball-triangle-path">
-					<div></div>
-					<div></div>
-					<div></div>
+			<div id="preloader" aria-label="Carregando..." tabindex="-1" role="status" aria-live="polite">
+				<div id="status" class="la-ball-triangle-path" aria-label="Carregando..." tabindex="-1" role="status" aria-live="polite">
+					<div aria-label="Carregando..." tabindex="-1" role="status" aria-live="polite"></div>
+					<div aria-label="Carregando..." tabindex="-1" role="status" aria-live="polite"></div>
+					<div aria-label="Carregando..." tabindex="-1" role="status" aria-live="polite"></div>
 				</div>
 			</div>
 		</app-root>
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-		<script
-			nomodule
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" nomodule="ionicons" title="Ionicons" aria-label="Código de script"></script>
+		<script nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" title="Ionicons" aria-label="Código de script" type="module"></script>
 	</body>
 </html>
